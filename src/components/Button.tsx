@@ -5,7 +5,9 @@ interface IButton {
 
 export function Button({content, href}: IButton) {
     return (
-        <a className="btn-primary" href={href}>
+        <a className="bg-primary-color rounded-3xl text-white h-fit p-4 w-fit no-underline shadow-md" 
+        href={href}
+        >
             {content}
         </a>
     )
