@@ -15,52 +15,33 @@ export function Strategy() {
     }, [])
 
     return (
-        <section className="strategy">
-				<div className="container strategy-container">
-					<div className="left">
-						<h2>Here are 3 working steps to organize our projects.</h2>
-						<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. 
-							Etiam porta sem malesuada magna mollis euismod. 
-							Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis.
-						</p>
-						<p>
-							Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. 
-							Aenean lacinia bibendum nulla sed consectetur.
-						</p>
-						{/* <a className="btn-primary" href="">Learn More</a> */}
-                        <Button content="Learn More" href="/strategy"/> 
-					</div>
-					<div className="right">
-						<div className="strategy-cards-container">
-							{/* <div className="strategy-card first">
-								<div className="order">01</div>
-								<div className="info">
-									<h3>Collect ideas</h3>
-									<p>Nulla vitae elit libero pharetra dapibus.</p>
-								</div>
-							</div>
-							<div className="strategy-card second">
-								<div className="order">01</div>
-								<div className="info">
-									<h3>Collect ideas</h3>
-									<p>Nulla vitae elit libero pharetra dapibus.</p>
-								</div>
-							</div>
-							<div className="strategy-card third">
-								<div className="order">01</div>
-								<div className="info">
-									<h3>Collect ideas</h3>
-									<p>Nulla vitae elit libero pharetra dapibus.</p>
-								</div>
-							</div> */}
-                            {strategyCards.map((card: IStrategyCard) => (
-                                <StrategyCard 
-                                key={card.id}
-                                {...card} />
-                            ))}
-						</div>                 
-					</div>
+        <section className="bg-gray pt-12 px-0 pb-24">
+			<div className="container items-center grid gap-10 grid-cols-1 md:grid-cols-2">
+				<div className="left">
+					<h2 className="mb-7">Here are 3 working steps to organize our projects.</h2>
+					<p className="mb-5">
+						Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. 
+						Etiam porta sem malesuada magna mollis euismod. 
+						Nullam id dolor id nibh ultricies vehicula ut id elit. 
+						Nullam quis risus eget urna mollis.
+					</p>
+					<p className="mb-5">
+						Nullam id dolor id nibh ultricies vehicula ut id elit. 
+						Vestibulum id ligula porta felis euismod semper. 
+						Aenean lacinia bibendum nulla sed consectetur.
+					</p>
+					<Button content="Learn More" href="/strategy"/> 
 				</div>
-			</section>
+				<div className="right">
+					<div className="flex flex-col gap-5">
+
+						{strategyCards.map((card: IStrategyCard) => (
+							<StrategyCard key={card.id} {...card} />
+						))}
+
+					</div>                 
+				</div>
+			</div>
+		</section>
     )
 }
