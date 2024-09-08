@@ -17,89 +17,40 @@ export function Team() {
     }, [])
 
     return (
-        <section className="team">
-				<div className="container team-container">
+        <section className="bg-gray pt-12 px-0 pb-24">
+				<div className="container grid grid-cols-1 gap-5 lg:grid-cols-[1fr_2fr_auto]">
 					<div className="info">
 						<h2>We are proud of our design team</h2>
 						<p>Just sit back and relax while we take care of your business needs for you.</p>
 					</div>
-					<div className="team-statistics">
-						<div className="team-statistics-item">
-							<div className="image">
-								<img src={checkIcon} alt="" />
+					<div className="flex flex-grap gap-24">
+
+						<div className="flex flex-col items-center text-center md:gap-3 flex-1">
+							<div className="bg-skyblue rounded-full p-4 w-fit">
+								<img className='h-[26px]' src={checkIcon} alt="" />
 							</div>
-							<h3>1000+</h3>
+							<h3 className='text-[41px]'>1000+</h3>
 							<p>Commpleted projects</p>
 						</div>
-						<div className="team-statistics-item">
-							<div className="image">
-								<img src={userIcon} alt="" />
+
+						<div className="flex flex-col items-center text-center md:gap-3 flex-1">
+							<div className="bg-skyblue rounded-full p-4 w-fit">
+								<img className='h-[26px]'  src={userIcon} alt="" />
 							</div>
-							<h3>50k</h3>
+							<h3 className='text-[41px]'>50k</h3>
 							<p>Happy customers</p>
 						</div>
-						<div className="team-statistics-item">
-							<div className="image">
-								<img src={trophyIcon} alt=""	/>
+
+						<div className="flex flex-col items-center text-center md:gap-3 flex-1">
+							<div className="bg-skyblue rounded-full p-4 w-fit">
+								<img className='h-[26px]' src={trophyIcon} alt=""	/>
 							</div>
-							<h3>20k</h3>
+							<h3 className='text-[41px]'>20k</h3>
 							<p>Awards won</p>
 						</div>
 					</div>
-					<div className="team-list">
-						{/* <div className="team-item">
-							<img src="src/assets/images/team/te4.jpg" alt="" />
-							<h3>Coriss Ambady</h3>
-							<p>Financial Analyst</p>
-							<p>Fermentum massa justo sit amet risus morbi leo. </p>
-							<div className="social-networks">
-								<div className="social-item">
-									<a href="">
-										<img src="" alt="" />
-									</a>
-								</div>
-							</div>
-						</div>
-						<div className="team-item">
-							<img src="src/assets/images/team/te4.jpg" alt="" />
-							<h3>Coriss Ambady</h3>
-							<p>Financial Analyst</p>
-							<p>Fermentum massa justo sit amet risus morbi leo. </p>
-							<div className="social-networks">
-								<div className="social-item">
-									<a href="">
-										<img src="" alt="" />
-									</a>
-								</div>
-							</div>
-						</div>
-						<div className="team-item">
-							<img src="src/assets/images/team/te4.jpg" alt="" />
-							<h3>Coriss Ambady</h3>
-							<p>Financial Analyst</p>
-							<p>Fermentum massa justo sit amet risus morbi leo. </p>
-							<div className="social-networks">
-								<div className="social-item">
-									<a href="">
-										<img src="" alt="" />
-									</a>
-								</div>
-							</div>
-						</div>
-						<div className="team-item">
-							<img src="src/assets/images/team/te4.jpg" alt="" />
-							<h3>Coriss Ambady</h3>
-							<p>Financial Analyst</p>
-							<p>Fermentum massa justo sit amet risus morbi leo. </p>
-							<div className="social-networks">
-								<div className="social-item">
-									<a href="">
-										<img src="" alt="" />
-									</a>
-								</div>
-							</div>
-						</div> */}
-                        {/* <Teammate /> */}
+					<div className="grid gap-5 grid-cols-1 col-span-full md:grid-cols-2 lg:grid-cols-4">
+						
                         {teammates.map( (item : ITeammate) => (
                             <Teammate key={item.id} {...item} />
                         ))}

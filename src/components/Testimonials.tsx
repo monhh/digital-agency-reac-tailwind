@@ -14,100 +14,12 @@ export function Testimonials() {
     }, [])    
 
     return(
-        <section className="testimonials">
+        <section className="bg-light-gray py-16 px-0">
 				<div className="container">
-					<h2>Don't take our word for it. See what customers are saying about us.</h2>
-					<div className="testimonials-list">
-						{/* <div className="testimonials-item">
-							<p>
-								“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. 
-								Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”
-							</p>
-							<div className="testimonials-author">
-								<div className="image">
-									<img src="src/assets/images/team/te1.jpg" alt="" />
-								</div>
-								<div className="bio">
-									<h3>Coriss Ambady</h3>
-									<p>Financial Analyst</p>
-								</div>
-							</div>
-						</div>
-						<div className="testimonials-item">
-							<p>
-								“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. 
-								Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”
-							</p>
-							<div className="testimonials-author">
-								<div className="image">
-									<img src="src/assets/images/team/te1.jpg" alt="" />
-								</div>
-								<div className="bio">
-									<h3>Coriss Ambady</h3>
-									<p>Financial Analyst</p>
-								</div>
-							</div>
-						</div> 
-						<div className="testimonials-item">
-							<p>
-								“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. 
-								Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”
-							</p>
-							<div className="testimonials-author">
-								<div className="image">
-									<img src="src/assets/images/team/te1.jpg" alt="" />
-								</div>
-								<div className="bio">
-									<h3>Coriss Ambady</h3>
-									<p>Financial Analyst</p>
-								</div>
-							</div>
-						</div> 
-						<div className="testimonials-item">
-							<p>
-								“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. 
-								Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”
-							</p>
-							<div className="testimonials-author">
-								<div className="image">
-									<img src="src/assets/images/team/te1.jpg" alt="" />
-								</div>
-								<div className="bio">
-									<h3>Coriss Ambady</h3>
-									<p>Financial Analyst</p>
-								</div>
-							</div>
-						</div> 
-						<div className="testimonials-item">
-							<p>
-								“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. 
-								Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”
-							</p>
-							<div className="testimonials-author">
-								<div className="image">
-									<img src="src/assets/images/team/te1.jpg" alt="" />
-								</div>
-								<div className="bio">
-									<h3>Coriss Ambady</h3>
-									<p>Financial Analyst</p>
-								</div>
-							</div>
-						</div> 
-						<div className="testimonials-item">
-							<p>
-								“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. 
-								Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”
-							</p>
-							<div className="testimonials-author">
-								<div className="image">
-									<img src="src/assets/images/team/te1.jpg" alt="" />
-								</div>
-								<div className="bio">
-									<h3>Coriss Ambady</h3>
-									<p>Financial Analyst</p>
-								</div>
-							</div>
-						</div>   */}
+					<h2 className="max-w-[670px] mt-0 mx-auto mb-12 text-center">
+						Don't take our word for it. See what customers are saying about us.
+					</h2>
+					<div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
 
                         {testimonials.map((item: ITestimonial) => (
                             <Testimonial key={item.id}  {...item} />

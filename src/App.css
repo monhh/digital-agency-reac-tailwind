@@ -350,7 +350,7 @@ ul {
 
 
 /* Team styles */
-.team {
+/* .team {
   background-color: var(--gray);
   padding: 50px 0 100px;
 }
@@ -359,9 +359,9 @@ ul {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
-}
+} */
 
-.team-item {
+/* .team-item {
   background-color: var(--white);
   box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60 / 12%);
   padding: 20px;
@@ -374,22 +374,22 @@ ul {
           text-transform: uppercase;
       }
   }
-}
+} */
 
-.team-list {
+/* .team-list {
   display: grid;
   gap: 20px;
   grid-column: 1 / -1;
   grid-template-columns: repeat(1, 1fr);
-}
+} */
 
-.team-statistics {
+/* .team-statistics {
   display: flex;
   flex-wrap: wrap;
   gap: 100px;
-}
+} */
 
-.team-statistics-item {
+/* .team-statistics-item {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -406,11 +406,11 @@ ul {
       padding: 16px;
       width: fit-content;
   }
-}
+} */
 
 
 /* Testimonial Styles */
-.testimonials {
+/* .testimonials {
   background-color: var(--light-gray);
   padding: 70px 0;
 
@@ -419,24 +419,24 @@ ul {
       margin: 0 auto 50px;
       text-align: center;
   }
-}
+} */
 
-.testimonials-list {
+/* .testimonials-list {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
-}
+} */
 
-.testimonials-item {
+/* .testimonials-item {
   background-color: var(--white);
   padding: 20px;
 
   & p {
       font-size: 18px;
   }
-}
+} */
 
-.testimonials-author {
+/* .testimonials-author {
   display: flex;
   justify-content: flex-start;
   gap: 30px;
@@ -445,7 +445,7 @@ ul {
   & img {
       max-width: 70px;
   }
-}
+} */
 
 
 /* media queries */
@@ -493,17 +493,17 @@ ul {
       grid-template-columns: repeat(2, 1fr);
   }  */
 
-  .team-list { 
+ /*  .team-list { 
       grid-template-columns: repeat(2, 1fr);
-  }
+  } */
 
-  .team-statistics-item {
+  /* .team-statistics-item {
       gap: 10px;
-  }
+  } */
 
-  .testimonials-list {
+  /* .testimonials-list {
       grid-template-columns: repeat(2, 1fr);
-  }
+  } */
   
 }
 
@@ -518,17 +518,17 @@ ul {
       grid-template-columns: repeat(3, 1fr);
   } */
 
-  .team-container {
+  /* .team-container {
       grid-template-columns: 1fr 2fr auto;
-  }
+  } */
 
-  .team-list { 
+  /* .team-list { 
       grid-template-columns: repeat(4, 1fr);
-  }
+  } */
 
-  .testimonials-list {
+  /* .testimonials-list {
       grid-template-columns: repeat(3, 1fr);
-  }
+  } */
 
 }
 
